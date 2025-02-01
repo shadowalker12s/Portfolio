@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2e1a47;
+    color: #d4af37;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+    background-color: #3b235a;
+}
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+.delay {
+    animation-delay: 1s;
+}
+.slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1.5s forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    to { opacity: 1; transform: translateY(0); }
+}
